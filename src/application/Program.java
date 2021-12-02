@@ -1,6 +1,9 @@
 package application;
 
+import java.util.Date;
+
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
@@ -9,9 +12,8 @@ public class Program {
 		
 		Department obj = new Department(1,"Books");
 		Department obj2 = new Department(1,"Books");
-		System.out.println(obj);
-		System.out.println(obj.equals(obj2));
-		System.out.println("g");
+		Seller seller = new Seller(21,"bob", "caio@gmail.copm",new Date("10/06/2002"),1000.00, obj2);
+		System.out.println(seller );
 	}
 
 }
