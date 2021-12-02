@@ -69,8 +69,8 @@ public String getEmial() {
 	return email;
 }
 
-public void setEmial(String emial) {
-	this.email = emial;
+public void setEmail(String email) {
+	this.email = email;
 }
 
 public Department getDepartment() {
@@ -100,8 +100,10 @@ public boolean equals(Object obj) {
 
 @Override
 public String toString() {
-	return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", department=" + department + "]";
+	return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
+			+ baseSalary + ", department=" + department + "]";
 }
+
 
 
 }
