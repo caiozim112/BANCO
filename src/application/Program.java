@@ -27,6 +27,17 @@ public class Program {
 		for(Seller obj:list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("Teste 333   " );
+		list= sellerDao.findAll();
+		for(Seller obj:list) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("----Teste 4");
+		Seller newSeller = new Seller(null,"oi","email",new Date(),400.00,department);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted! New id = "+ newSeller.getId());
 	}
 
 }
